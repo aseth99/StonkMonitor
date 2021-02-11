@@ -43,55 +43,31 @@ def parsePrice(ticker):
 	price = soup.find('div',{'class': 'My(6px) Pos(r) smartphone_Mt(6px)'}).find_all('span')
 	return price
 
-# stonkInfoFunc("ATZ.TO")
-# stonkInfoFunc("BNS.TO")
-# stonkInfoFunc("GOOS.TO")
-# stonkInfoFunc("FLT.V")
-# stonkInfoFunc("ENB.TO")
-# stonkInfoFunc("ERE-UN.TO")
-# stonkInfoFunc("FFH.TO")
-# stonkInfoFunc("INO-UN.TO")
-# stonkInfoFunc("NWH-UN.TO")
-# stonkInfoFunc("OPEN")
-# stonkInfoFunc("RY.TO")
-# stonkInfoFunc("SGR-UN.TO")
-# stonkInfoFunc("SRU-UN.TO")
-# stonkInfoFunc("XBC.TO")
-# stonkInfoFunc("ACIC")
-# stonkInfoFunc("N.V")
-# stonkInfoFunc("VCN.TO")
-# stonkInfoFunc("VEE.TO")
-# stonkInfoFunc("VRE.TO")
-# stonkInfoFunc("XEF.TO")
-# stonkInfoFunc("XSP.TO")
-# stonkInfoFunc("XUU.TO")
-# stonkInfoFunc("0P000073OF.TO")
-
-
-watchlist = [
-			"ATZ.TO",
-			"BNS.TO",
-			"GOOS.TO",
-			"FLT.V",
-			"ENB.TO",
-			"ERE-UN.TO",
-			"FFH.TO",
-			"INO-UN.TO",
-			"NWH-UN.TO",
-			"OPEN",
-			"RY.TO",
-			"SGR-UN.TO",
-			"SRU-UN.TO",
-			"XBC.TO",
-			"ACIC",
-			"N.V",
-			"VCN.TO",
-			"VEE.TO",
-			"VRE.TO",
-			"XEF.TO",
-			"XSP.TO",
-			"XUU.TO",
-			"0P000073OF.TO"
-			]
-for x in watchlist:
-	stonkInfoFunc(x)
+if __name__ == "__main__":
+	watchlist = [
+				"ATZ.TO",
+				"BNS.TO",
+				"GOOS.TO",
+				"FLT.V",
+				"ENB.TO",
+				"ERE-UN.TO",
+				"FFH.TO",
+				"INO-UN.TO",
+				"NWH-UN.TO",
+				"OPEN",
+				"RY.TO",
+				"SGR-UN.TO",
+				"SRU-UN.TO",
+				"XBC.TO",
+				"ACIC",
+				"N.V",
+				"VCN.TO",
+				"VEE.TO",
+				"VRE.TO",
+				"XEF.TO",
+				"XSP.TO",
+				"XUU.TO",
+				"0P000073OF.TO"
+				]
+	for x in watchlist:
+		stonkInfoFunc(x)
